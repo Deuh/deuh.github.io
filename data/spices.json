@@ -4,6 +4,7 @@
             "id": "Ci",
             "name": "Cinnamon",
             "compound_id": "swp",
+            "flavours": ["warm", "sweet", "peppery"],
             "row": "1",
             "col": "1"
         },
@@ -12,6 +13,7 @@
             "id": "Ca",
             "name": "Cassia",
             "compound_id": "swp",
+            "flavours": ["warm", "sweet", "peppery"],
             "row": "1",
             "col": "2"
         },
@@ -20,6 +22,7 @@
             "id": "Cl",
             "name": "Clove",
             "compound_id": "swp",
+            "flavours": ["warm", "sweet", "peppery"],
             "row": "1",
             "col": "3"
         },
@@ -28,6 +31,7 @@
             "id": "Al",
             "name": "Allspice",
             "compound_id": "swp",
+            "flavours": ["warm", "sweet", "peppery"],
             "row": "1",
             "col": "4"
         },
@@ -36,6 +40,7 @@
             "id": "Nu",
             "name": "Nutmeg",
             "compound_id": "wt",
+            "flavours": ["warm", "sweet", "peppery"],
             "row": "1",
             "col": "5"
         },
@@ -44,6 +49,7 @@
             "id": "Ma",
             "name": "Mace",
             "compound_id": "wt",
+            "flavours": ["warm", "sweet", "peppery"],
             "row": "1",
             "col": "6"
         },
@@ -52,6 +58,7 @@
             "id": "An",
             "name": "Anise",
             "compound_id": "swp",
+            "flavours": ["warm", "sweet", "peppery"],
             "row": "2",
             "col": "1"
         },
@@ -60,6 +67,7 @@
             "id": "St",
             "name": "Star Anise",
             "compound_id": "swp",
+            "flavours": ["warm", "sweet", "peppery"],
             "row": "2",
             "col": "2"
         },
@@ -68,6 +76,7 @@
             "id": "Fe",
             "name": "Fennel",
             "compound_id": "swp",
+            "flavours": ["warm", "sweet", "peppery"],
             "row": "2",
             "col": "3"
         },
@@ -76,6 +85,7 @@
             "id": "Cw",
             "name": "Caraway",
             "compound_id": "wt",
+            "flavours": ["warm", "sweet", "peppery"],
             "row": "2",
             "col": "4"
         },
@@ -84,6 +94,7 @@
             "id": "Di",
             "name": "Dill",
             "compound_id": "wt",
+            "flavours": ["warm", "sweet", "peppery"],
             "row": "2",
             "col": "5"
         },
@@ -92,6 +103,7 @@
             "id": "Ao",
             "name": "Annatto",
             "compound_id": "wt",
+            "flavours": ["warm", "sweet", "peppery"],
             "row": "2",
             "col": "6"
         },
@@ -100,6 +112,7 @@
             "id": "Lq",
             "name": "Liquorice",
             "compound_id": "swp",
+            "flavours": ["warm", "sweet", "peppery"],
             "row": "3",
             "col": "1"
         },
@@ -108,6 +121,7 @@
             "id": "Mb",
             "name": "Mahleb",
             "compound_id": "swp",
+            "flavours": ["warm", "sweet", "peppery"],
             "row": "3",
             "col": "2"
         },
@@ -116,6 +130,7 @@
             "id": "Mc",
             "name": "Mastic",
             "compound_id": "ft",
+            "flavours": ["warm", "sweet", "peppery"],
             "row": "3",
             "col": "3"
         },
@@ -124,6 +139,7 @@
             "id": "Ju",
             "name": "Juniper",
             "compound_id": "ft",
+            "flavours": ["warm", "sweet", "peppery"],
             "row": "3",
             "col": "4"
         },
@@ -132,6 +148,7 @@
             "id": "Ro",
             "name": "Rose",
             "compound_id": "ft",
+            "flavours": ["warm", "sweet", "peppery"],
             "row": "3",
             "col": "5"
         },
@@ -140,6 +157,7 @@
             "id": "Co",
             "name": "Coriander",
             "compound_id": "ft",
+            "flavours": ["warm", "sweet", "peppery"],
             "row": "3",
             "col": "6"
         },
@@ -148,6 +166,7 @@
             "id": "Va",
             "name": "Vanilla",
             "compound_id": "swp",
+            "flavours": ["warm", "sweet", "peppery"],
             "row": "4",
             "col": "1"
         },
@@ -156,6 +175,7 @@
             "id": "Cu",
             "name": "Cumin",
             "compound_id": "et",
+            "flavours": ["warm", "sweet", "peppery"],
             "row": "4",
             "col": "2"
         },
@@ -164,6 +184,7 @@
             "id": "Ni",
             "name": "Nigella",
             "compound_id": "et",
+            "flavours": ["warm", "sweet", "peppery"],
             "row": "4",
             "col": "3"
         },
@@ -172,6 +193,7 @@
             "id": "Sl",
             "name": "Grain of Selim",
             "compound_id": "pt",
+            "flavours": ["warm", "sweet", "peppery"],
             "row": "4",
             "col": "4"
         },
@@ -180,6 +202,7 @@
             "id": "Bl",
             "name": "Black Cardamon",
             "compound_id": "pt",
+            "flavours": ["warm", "sweet", "peppery"],
             "row": "4",
             "col": "5"
         },
@@ -188,6 +211,7 @@
             "id": "Cm",
             "name": "Cardamon",
             "compound_id": "pt",
+            "flavours": ["warm", "sweet", "peppery"],
             "row": "4",
             "col": "6"
         },
@@ -196,6 +220,7 @@
             "id": "Li",
             "name": "Dried Lime",
             "compound_id": "ct",
+            "flavours": ["warm", "sweet", "peppery"],
             "row": "5",
             "col": "1"
         },
@@ -204,6 +229,7 @@
             "id": "Lm",
             "name": "Lemon Myrtle",
             "compound_id": "ct",
+            "flavours": ["warm", "sweet", "peppery"],
             "row": "5",
             "col": "2"
         },
@@ -212,6 +238,7 @@
             "id": "Am",
             "name": "Amchoor",
             "compound_id": "ssa",
+            "flavours": ["warm", "sweet", "peppery"],
             "row": "5",
             "col": "3"
         },
@@ -220,6 +247,7 @@
             "id": "Ar",
             "name": "Anardana",
             "compound_id": "ssa",
+            "flavours": ["warm", "sweet", "peppery"],
             "row": "5",
             "col": "4"
         },
@@ -228,6 +256,7 @@
             "id": "Ba",
             "name": "Bay",
             "compound_id": "pt",
+            "flavours": ["warm", "sweet", "peppery"],
             "row": "5",
             "col": "5"
         },
@@ -236,6 +265,7 @@
             "id": "Gg",
             "name": "Galangal",
             "compound_id": "pt",
+            "flavours": ["warm", "sweet", "peppery"],
             "row": "5",
             "col": "6"
         },
@@ -244,6 +274,7 @@
             "id": "Le",
             "name": "Lemon grass",
             "compound_id": "ct",
+            "flavours": ["warm", "sweet", "peppery"],
             "row": "6",
             "col": "1"
         },
@@ -252,6 +283,7 @@
             "id": "Ta",
             "name": "Tamarind",
             "compound_id": "ssa",
+            "flavours": ["warm", "sweet", "peppery"],
             "row": "6",
             "col": "2"
         },
@@ -260,6 +292,7 @@
             "id": "Su",
             "name": "Sumac",
             "compound_id": "ssa",
+            "flavours": ["warm", "sweet", "peppery"],
             "row": "6",
             "col": "3"
         },
@@ -268,6 +301,7 @@
             "id": "Cb",
             "name": "Carob",
             "compound_id": "ssa",
+            "flavours": ["warm", "sweet", "peppery"],
             "row": "6",
             "col": "4"
         },
@@ -276,6 +310,7 @@
             "id": "By",
             "name": "Barberry",
             "compound_id": "fa",
+            "flavours": ["warm", "sweet", "peppery"],
             "row": "6",
             "col": "5"
         },
@@ -284,6 +319,7 @@
             "id": "Cc",
             "name": "Cacao",
             "compound_id": "fa",
+            "flavours": ["warm", "sweet", "peppery"],
             "row": "6",
             "col": "6"
         },
@@ -292,6 +328,7 @@
             "id": "Pa",
             "name": "Paprika",
             "compound_id": "tp",
+            "flavours": ["warm", "sweet", "peppery"],
             "row": "7",
             "col": "1"
         },
@@ -300,6 +337,7 @@
             "id": "Wa",
             "name": "Wattle",
             "compound_id": "tp",
+            "flavours": ["warm", "sweet", "peppery"],
             "row": "7",
             "col": "2"
         },
@@ -308,6 +346,7 @@
             "id": "Ga",
             "name": "Garlic",
             "compound_id": "sc",
+            "flavours": ["warm", "sweet", "peppery"],
             "row": "7",
             "col": "3"
         },
@@ -316,6 +355,7 @@
             "id": "As",
             "name": "Asafoetida",
             "compound_id": "sc",
+            "flavours": ["warm", "sweet", "peppery"],
             "row": "7",
             "col": "4"
         },
@@ -324,6 +364,7 @@
             "id": "Cy",
             "name": "Curry Leaf",
             "compound_id": "sc",
+            "flavours": ["warm", "sweet", "peppery"],
             "row": "7",
             "col": "5"
         },
@@ -332,6 +373,7 @@
             "id": "Mu",
             "name": "Mustard",
             "compound_id": "sc",
+            "flavours": ["warm", "sweet", "peppery"],
             "row": "7",
             "col": "6"
         },
@@ -340,6 +382,7 @@
             "id": "Se",
             "name": "Sesame",
             "compound_id": "tp",
+            "flavours": ["warm", "sweet", "peppery"],
             "row": "8",
             "col": "1"
         },
@@ -348,6 +391,7 @@
             "id": "Pr",
             "name": "Grains of paradise",
             "compound_id": "pc",
+            "flavours": ["warm", "sweet", "peppery"],
             "row": "8",
             "col": "2"
         },
@@ -356,6 +400,7 @@
             "id": "Pe",
             "name": "Black pepper",
             "compound_id": "pc",
+            "flavours": ["warm", "sweet", "peppery"],
             "row": "8",
             "col": "3"
         },
@@ -364,6 +409,7 @@
             "id": "Sa",
             "name": "Saffron",
             "compound_id": "uc",
+            "flavours": ["warm", "sweet", "peppery"],
             "row": "8",
             "col": "4"
         },
@@ -372,6 +418,7 @@
             "id": "Fg",
             "name": "Fenugreek",
             "compound_id": "uc",
+            "flavours": ["warm", "sweet", "peppery"],
             "row": "8",
             "col": "5"
         },
@@ -380,6 +427,7 @@
             "id": "Tu",
             "name": "Turmeric",
             "compound_id": "uc",
+            "flavours": ["warm", "sweet", "peppery"],
             "row": "8",
             "col": "6"
         },
@@ -388,6 +436,7 @@
             "id": "Si",
             "name": "Sichuan pepper",
             "compound_id": "pc",
+            "flavours": ["warm", "sweet", "peppery"],
             "row": "9",
             "col": "1"
         },
@@ -396,6 +445,7 @@
             "id": "Gi",
             "name": "Ginger",
             "compound_id": "pc",
+            "flavours": ["warm", "sweet", "peppery"],
             "row": "9",
             "col": "2"
         },
@@ -404,6 +454,7 @@
             "id": "Ch",
             "name": "Chilli",
             "compound_id": "pc",
+            "flavours": ["warm", "sweet", "peppery"],
             "row": "9",
             "col": "3"
         },
@@ -412,6 +463,7 @@
             "id": "Po",
             "name": "Poppy",
             "compound_id": "uc",
+            "flavours": ["warm", "sweet", "peppery"],
             "row": "9",
             "col": "4"
         },
@@ -420,6 +472,7 @@
             "id": "Aj",
             "name": "Ajwain",
             "compound_id": "uc",
+            "flavours": ["warm", "sweet", "peppery"],
             "row": "9",
             "col": "5"
         },
@@ -428,6 +481,7 @@
             "id": "Ce",
             "name": "Celery Seed",
             "compound_id": "uc",
+            "flavours": ["warm", "sweet", "peppery"],
             "row": "9",
             "col": "6"
         }
