@@ -16,19 +16,19 @@ function getJsonFile(src) {
             })
             .then(json => {
                 console.log('json', json);
-                renderPeriodicTable(json.spices);;
+                renderPeriodicTable(json.spices, json.compounds);
             })
     } else {
         console.log('TODO: XMLHttpRequest');
     }
 }
 
-function renderPeriodicTable(data) {
+function renderPeriodicTable(data, compounds) {
     var app = document.querySelector('#periodic-table');
     for (var key in data) {
         var spice = data[key];
         var grid = 'grid-area: ' + spice.col + ' / ' + spice.row + ';';
-        var el = generateElement(key, spice.id, spice.name, spice.compound_id, spice.flavours, grid);
+        var el = generateElement(key, spice.id, spice.name, compounds[spice.compound_id].id, spice.flavours, grid);
         app.appendChild(el);
     }
 }
@@ -40,7 +40,7 @@ function generateElement(num, id, name, compound, flavours, grid) {
     el.appendChild(createDiv('name', name));
     el.appendChild(createDiv('atomic-number', compound));
     el.appendChild(createDiv('symbol', id));
-    el.appendChild(createDiv('atomic-weight', flavours.join('-')));
+    el.appendChild(createDiv('atomic-weight', flavours.join(' - ')));
     return el;
 }
 

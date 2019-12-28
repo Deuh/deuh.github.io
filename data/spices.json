@@ -486,5 +486,67 @@
         "col": 6,
         "flavours": ["bitter", "savoury","lemony"]
       }
-    ]
+    ],
+    "compounds": {
+        "1": {
+          "id": "swp",
+          "name": "Sweet Warming Phenols",
+          "color": "#f2c8a2"
+        },
+        "2": {
+          "id": "wt",
+          "name": "Warming Terpernes",
+          "color": "#d1c4b4"
+        },
+        "3": {
+          "id": "ft",
+          "name": "Fragrant Terpernes",
+          "color": "#dec6c4"
+        },
+        "4": {
+          "id": "et",
+          "name": "Earthy Terpernes",
+          "color": "#bebab1"
+        },
+        "5": {
+          "id": "pt",
+          "name": "Penetrating Terpenes",
+          "color": "#c3d2d5"
+        },
+        "6": {
+          "id": "ct",
+          "name": "Citrus Terpenes",
+          "color": "#c5d3c2"
+        },
+        "7": {
+          "id": "ssa",
+          "name": "Sweet-Sour Acids",
+          "color": "#f2d9a9"
+        },
+        "8": {
+          "id": "fa",
+          "name": "Fruity Aldehydes",
+          "color": "#dcc7d8"
+        },
+        "9": {
+          "id": "tp",
+          "name": "Toasty Pyrazines",
+          "color": "#d9c3b6"
+        },
+        "10": {
+          "id": "sc",
+          "name": "Sulphurous Compounds",
+          "color": "#d9c6a5"
+        },
+        "11": {
+          "id": "pc",
+          "name": "Pugent Compounds",
+          "color": "#f8bba6"
+        },
+        "12": {
+          "id": "uc",
+          "name": "Unique Compounds",
+          "color": "#c5d3c4"
+        }
+      }
   }
