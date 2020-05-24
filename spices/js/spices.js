@@ -2,7 +2,7 @@
  * Spices Script
  */
 function main() {
-    getJsonFile('https://deuh.github.io/data/spices.json');
+    getJsonFile('https://deuh.github.io/spices/data/spices.json');
 }
 
 function getJsonFile(src) {
