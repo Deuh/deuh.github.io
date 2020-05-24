@@ -1,0 +1,352 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono");
+:root {
+    --background-color: #212424;
+    --base-text-color: #fff;
+    --compound-color-swp: #f2c8a2;
+    --compound-color-wt: #d1c4b4;
+    --compound-color-ft: #dec6c4;
+    --compound-color-et: #bebab1;
+    --compound-color-pt: #c3d2d5;
+    --compound-color-ct: #c5d3c2;
+    --compound-color-ssa: #f2d9a9;
+    --compound-color-fa: #dcc7d8;
+    --compound-color-tp: #d9c3b6;
+    --compound-color-sc: #d9c6a5;
+    --compound-color-pc: #f8bba6;
+    --compound-color-uc: #c5d3c4;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 12px;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "Roboto Mono", monospace;
+    margin: 0;
+    background-color: var(--background-color);
+    color: var(--base-text-color);
+}
+
+.wrapper {
+    max-width: 90vw;
+    height: 100vh;
+    padding: 0 10px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.wrapper .title {
+    display: block;
+}
+
+.periodic-table {
+    display: grid;
+    grid-template: repeat(6, auto)/repeat(9, auto);
+    grid-gap: 2px;
+    grid-auto-rows: 1fr;
+    grid-auto-columns: 1fr;
+    grid-template-columns: repeat(9, 1fr);
+}
+
+.periodic-table__element {
+    padding: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--base-text-color);
+    background: var(--background-color);
+    color: var(--base-text-color);
+}
+
+.periodic-table__element .atomic-number {
+    order: 1;
+    align-self: flex-start;
+}
+
+.periodic-table__element .symbol {
+    font-size: 15px;
+    font-weight: bold;
+    order: 2;
+}
+
+.periodic-table__element .name {
+    order: 3;
+}
+
+.periodic-table__element .atomic-weight {
+    order: 4;
+}
+
+.periodic-table__element.periodic-table__element--swp .symbol {
+    color: var(--compound-color-swp);
+}
+
+.periodic-table__element:hover.periodic-table__element--swp {
+    background-color: var(--compound-color-swp);
+}
+
+.periodic-table__element.periodic-table__element--wt .symbol {
+    color: var(--compound-color-wt);
+}
+
+.periodic-table__element:hover.periodic-table__element--wt {
+    background-color: var(--compound-color-wt);
+}
+
+.periodic-table__element.periodic-table__element--ft .symbol {
+    color: var(--compound-color-ft);
+}
+
+.periodic-table__element:hover.periodic-table__element--ft {
+    background-color: var(--compound-color-ft);
+}
+
+.periodic-table__element.periodic-table__element--et .symbol {
+    color: var(--compound-color-et);
+}
+
+.periodic-table__element:hover.periodic-table__element--et {
+    background-color: var(--compound-color-et);
+}
+
+.periodic-table__element.periodic-table__element--pt .symbol {
+    color: var(--compound-color-pt);
+}
+
+.periodic-table__element:hover.periodic-table__element--pt {
+    background-color: var(--compound-color-pt);
+}
+
+.periodic-table__element.periodic-table__element--ct .symbol {
+    color: var(--compound-color-ct);
+}
+
+.periodic-table__element:hover.periodic-table__element--ct {
+    background-color: var(--compound-color-ct);
+}
+
+.periodic-table__element.periodic-table__element--ssa .symbol {
+    color: var(--compound-color-ssa);
+}
+
+.periodic-table__element:hover.periodic-table__element--ssa {
+    background-color: var(--compound-color-ssa);
+}
+
+.periodic-table__element.periodic-table__element--fa .symbol {
+    color: var(--compound-color-fa);
+}
+
+.periodic-table__element:hover.periodic-table__element--fa {
+    background-color: var(--compound-color-fa);
+}
+
+.periodic-table__element.periodic-table__element--tp .symbol {
+    color: var(--compound-color-tp);
+}
+
+.periodic-table__element:hover.periodic-table__element--tp {
+    background-color: var(--compound-color-tp);
+}
+
+.periodic-table__element.periodic-table__element--sc .symbol {
+    color: var(--compound-color-sc);
+}
+
+.periodic-table__element:hover.periodic-table__element--sc {
+    background-color: var(--compound-color-sc);
+}
+
+.periodic-table__element.periodic-table__element--pc .symbol {
+    color: var(--compound-color-pc);
+}
+
+.periodic-table__element:hover.periodic-table__element--pc {
+    background-color: var(--compound-color-pc);
+}
+
+.periodic-table__element.periodic-table__element--uc .symbol {
+    color: var(--compound-color-uc);
+}
+
+.periodic-table__element:hover.periodic-table__element--uc {
+    background-color: var(--compound-color-uc);
+}
+
+.periodic-table__element:hover {
+    transition: 0.2s all ease-out;
+    background-color: transparent;
+}
+
+.periodic-table__element:hover,
+.periodic-table__element:hover .symbol {
+    color: var(--background-color);
+}
+
+.extra-info {
+    display: flex;
+    margin-top: 20px;
+}
+
+.extra-info__legend {
+    flex: 1 1 30%;
+    padding: 10px;
+}
+
+.extra-info__legend .list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.extra-info__legend .list__single-item {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.extra-info__legend .list__single-item .title {
+    font-weight: bold;
+}
+
+.extra-info__legend .list__single-item .box {
+    width: 10px;
+    height: 10px;
+    margin-right: 3px;
+}
+
+.extra-info__legend .list__item {
+    flex: 1 1 50%;
+    padding: 5px;
+}
+
+.extra-info__legend .list__item .title {
+    margin: 0;
+    font-weight: bold;
+}
+
+.extra-info__legend .list__item .sublist {
+    list-style: none;
+}
+
+.extra-info__legend .list__item .sublist__item {
+    display: flex;
+    align-items: center;
+}
+
+.extra-info__legend .list__item .sublist__item.box {
+    width: 10px;
+    height: 10px;
+    background-color: var(--alkali-metal);
+    margin-right: 3px;
+}
+
+
+/* Legend Color*/
+
+.extra-info__legend .list__item .sublist__item.box.box--swp {
+    background-color: var(--compound-color-swp);
+}
+
+.extra-info__legend .list__item .sublist__item.box.box--wt {
+    background-color: var(--compound-color-wt);
+}
+
+.extra-info__legend .list__item .sublist__item.box.box--ft {
+    background-color: var(--compound-color-ft);
+}
+
+.extra-info__legend .list__item .sublist__item.box.box--et {
+    background-color: var(--compound-color-et);
+}
+
+.extra-info__legend .list__item .sublist__item.box.box--pt {
+    background-color: var(--compound-color-pt);
+}
+
+.extra-info__legend .list__item .sublist__item.box.box--ct {
+    background-color: var(--compound-color-ct);
+}
+
+.extra-info__legend .list__item .sublist__item.box.box--ssa {
+    background-color: var(--compound-color-ssa);
+}
+
+.extra-info__legend .list__item .sublist__item.box.box--fa {
+    background-color: var(--compound-color-fa);
+}
+
+.extra-info__legend .list__item .sublist__item.box.box--tp {
+    background-color: var(--compound-color-tp);
+}
+
+.extra-info__legend .list__item .sublist__item.box.box--sc {
+    background-color: var(--compound-color-sc);
+}
+
+.extra-info__legend .list__item .sublist__item.box.box--pc {
+    background-color: var(--compound-color-pc);
+}
+
+.extra-info__legend .list__item .sublist__item.box.box--uc {
+    background-color: var(--compound-color-uc);
+}
+
+.wrapper .item--swp:hover~.periodic-table .periodic-table__element--swp {
+    background-color: var(--compound-color-swp);
+}
+
+.wrapper .extra-info .sublist__item:hover~.periodic-table .periodic-table__element--wt {
+    background-color: var(--compound-color-wt);
+}
+
+.wrapper .extra-info .sublist__item:hover~.periodic-table .periodic-table__element--ft {
+    background-color: var(--compound-color-ft);
+}
+
+.wrapper .extra-info .sublist__item:hover~.periodic-table .periodic-table__element--et {
+    background-color: var(--compound-color-et);
+}
+
+.wrapper .extra-info .sublist__item:hover~.periodic-table .periodic-table__element--pt {
+    background-color: var(--compound-color-pt);
+}
+
+.wrapper .extra-info .sublist__item:hover~.periodic-table .periodic-table__element--ct {
+    background-color: var(--compound-color-ct);
+}
+
+.wrapper .extra-info .sublist__item:hover~.periodic-table .periodic-table__element--ssa {
+    background-color: var(--compound-color-ssa);
+}
+
+.wrapper .extra-info .sublist__item:hover~.periodic-table .periodic-table__element--fa {
+    background-color: var(--compound-color-fa);
+}
+
+.wrapper .extra-info .sublist__item:hover~.periodic-table .periodic-table__element--tp {
+    background-color: var(--compound-color-tp);
+}
+
+.wrapper .extra-info .sublist__item:hover~.periodic-table .periodic-table__element--sc {
+    background-color: var(--compound-color-sc);
+}
+
+.wrapper .extra-info .sublist__item:hover~.periodic-table .periodic-table__element--pc {
+    background-color: var(--compound-color-pc);
+}
+
+.wrapper .extra-info .sublist__item:hover~.periodic-table .periodic-table__element--uc {
+    background-color: var(--compound-color-uc);
+}
