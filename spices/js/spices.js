@@ -38,9 +38,9 @@ function generateElement(num, id, name, compound, flavours, grid) {
     el.setAttribute('class', 'periodic-table__element periodic-table__element--' + compound + ' ' + id);
     el.setAttribute('style', grid);
     el.appendChild(createDiv('name', name));
-    el.appendChild(createDiv('atomic-number', compound));
+    el.appendChild(createDiv('compounds-id', compound));
     el.appendChild(createDiv('symbol', id));
-    el.appendChild(createDiv('atomic-weight', flavours.join(' - ')));
+    el.appendChild(createDiv('flavours', flavours.join(', ')));
     return el;
 }
 
