@@ -8,6 +8,7 @@
 }
 .periodic-table__element {
   padding: 3px;
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -15,6 +16,12 @@
   border: 1px solid #fff;
   background: #212424;
   color: #fff;
+}
+.periodic-table__element:hover .symbol {
+  position: absolute;
+  top: -6px;
+  right: 2px;
+  color: #212424;
 }
 .periodic-table__element:hover,
 .periodic-table__element:hover .symbol {
@@ -25,6 +32,14 @@
   order: 1;
   display: none;
   align-self: flex-start;
+}
+.periodic-table__element:hover .compounds-id {
+  padding: 0px 3px 1px 3px;
+  border: 1px solid black;
+  border-radius: 2px;
+  color: #151515;
+  position: relative;
+  bottom: 1px;
 }
 .periodic-table__element .symbol {
   font-size: 30px;
@@ -41,9 +56,6 @@
 }
 .periodic-table__element:hover .compounds-id {
   display: block;
-}
-.periodic-table__element:hover .symbol {
-  display: none;
 }
 .periodic-table__element:hover .name {
   display: none;
@@ -63,9 +75,6 @@
 .periodic-table__element:hover .compounds-id {
   display: block;
 }
-.periodic-table__element:hover .symbol {
-  display: none;
-}
 .periodic-table__element:hover .name {
   display: none;
 }
@@ -83,9 +92,6 @@
 }
 .periodic-table__element:hover .compounds-id {
   display: block;
-}
-.periodic-table__element:hover .symbol {
-  display: none;
 }
 .periodic-table__element:hover .name {
   display: none;
@@ -105,9 +111,6 @@
 .periodic-table__element:hover .compounds-id {
   display: block;
 }
-.periodic-table__element:hover .symbol {
-  display: none;
-}
 .periodic-table__element:hover .name {
   display: none;
 }
@@ -125,9 +128,6 @@
 }
 .periodic-table__element:hover .compounds-id {
   display: block;
-}
-.periodic-table__element:hover .symbol {
-  display: none;
 }
 .periodic-table__element:hover .name {
   display: none;
@@ -147,9 +147,6 @@
 .periodic-table__element:hover .compounds-id {
   display: block;
 }
-.periodic-table__element:hover .symbol {
-  display: none;
-}
 .periodic-table__element:hover .name {
   display: none;
 }
@@ -167,9 +164,6 @@
 }
 .periodic-table__element:hover .compounds-id {
   display: block;
-}
-.periodic-table__element:hover .symbol {
-  display: none;
 }
 .periodic-table__element:hover .name {
   display: none;
@@ -189,9 +183,6 @@
 .periodic-table__element:hover .compounds-id {
   display: block;
 }
-.periodic-table__element:hover .symbol {
-  display: none;
-}
 .periodic-table__element:hover .name {
   display: none;
 }
@@ -209,9 +200,6 @@
 }
 .periodic-table__element:hover .compounds-id {
   display: block;
-}
-.periodic-table__element:hover .symbol {
-  display: none;
 }
 .periodic-table__element:hover .name {
   display: none;
@@ -231,9 +219,6 @@
 .periodic-table__element:hover .compounds-id {
   display: block;
 }
-.periodic-table__element:hover .symbol {
-  display: none;
-}
 .periodic-table__element:hover .name {
   display: none;
 }
@@ -252,9 +237,6 @@
 .periodic-table__element:hover .compounds-id {
   display: block;
 }
-.periodic-table__element:hover .symbol {
-  display: none;
-}
 .periodic-table__element:hover .name {
   display: none;
 }
@@ -272,9 +254,6 @@
 }
 .periodic-table__element:hover .compounds-id {
   display: block;
-}
-.periodic-table__element:hover .symbol {
-  display: none;
 }
 .periodic-table__element:hover .name {
   display: none;
