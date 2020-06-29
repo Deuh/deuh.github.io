@@ -303,7 +303,7 @@ h1{
 
 			return '<div class="event" style="margin-left: ' + offset.toFixed(2) + 'px">'
 				+ '<div class="time" style="width: ' + width.toFixed(2) + 'px"></div>'
-				+ '<b>' + d.time.title + '</b> ' + d.text
+				+ '<div class="date">' + d.time.title + ' ' + d.text + '</div> '
 				+ '</div>';
 		},
 		renderYears: function(firstYear, lastYear){
