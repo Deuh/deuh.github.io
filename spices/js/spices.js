@@ -28,6 +28,7 @@ function renderPeriodicTable(data, compounds) {
     for (var key in data) {
         var spice = data[key];
         var grid = 'grid-area: ' + spice.col + ' / ' + spice.row + ';';
+        grid = '';
         var el = generateElement(key, spice.id, spice.name, compounds[spice.compound_id].id, spice.flavours, grid);
         app.appendChild(el);
     }

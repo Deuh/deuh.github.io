@@ -304,19 +304,87 @@
   border: 1px dotted palegoldenrod;
   margin:0px;
   padding: 5px;
-  font-size: 2em;
+  font-size: 1em;
 }
-.card-compoundId {
-  grid-area: 1/1/3/8;
+.card-compoundId { grid-area: 1/1/2/8;}
+.card-compoundId .id { border: 1px solid #fff; border-radius:2px; margin: 2px; padding: 2px;}
+.card-spiceName { grid-area: 2/1/3/8; }
+.card-spiceId { grid-area: 1/8/4/14;  font-size: 8em;  text-align: right;}
+.card-flavours { grid-area: 5/1/14/14; }
+
+
+
+.grid_order-periodic {
+  display: grid;
+  grid-template-areas: "Ci An Lq Va Li Le Pa Se Si"
+                       "Ca St Mb Cu Lm Ta Wa Pr Gi"
+                       "Cl Fe Mc Ni Am Su Ga Pe Ch"
+                       "Al Cw Ju Sl Ar Cb As Sa Po"
+                       "Nu Di Ro Bl Ba By Cy Fg Aj"
+                       "Ma Ao Co Cm Gg Cc Mu Tu Ce";
 }
-.card-spiceName {
-  grid-area: 3/1/5/8;
-  font-size: 8em;
-  text-align: right;
+
+
+.grid_order-compounds {
+  display: grid;
+  grid-template-areas: "Ci An Lq Va Li Pa Se Si"
+                       "Ca St Mb Cu Lm Ta Wa Pr Gi"
+                       "Cl Fe Mc Ni Am Su Ga Pe Ch"
+                       "Al Cw Ju Sl Ar Cb As Sa Po"
+                       "Nu Di Ro Bl Ba By Cy Fg Aj"
+                       "Ma Ao Co Cm Gg Cc Mu Tu Ce";
 }
-.card-spiceId {
-  grid-area: 1/8/5/14;
-}
-.card-flavours {
-  grid-area: 5/1/14/14;
-}
+
+.periodic-table__element.Ci { grid-area: Ci;}
+.periodic-table__element.An { grid-area: An;}
+.periodic-table__element.Lq { grid-area: Lq;}
+.periodic-table__element.Va { grid-area: Va;}
+.periodic-table__element.Li { grid-area: Li;}
+.periodic-table__element.Pa { grid-area: Pa;}
+.periodic-table__element.Se { grid-area: Se;}
+.periodic-table__element.Si { grid-area: Si;}
+.periodic-table__element.Ca { grid-area: Ca;}
+.periodic-table__element.St { grid-area: St;}
+.periodic-table__element.Mb { grid-area: Mb;}
+.periodic-table__element.Cu { grid-area: Cu;}
+.periodic-table__element.Lm { grid-area: Lm;}
+.periodic-table__element.Ta { grid-area: Ta;}
+.periodic-table__element.Wa { grid-area: Wa;}
+.periodic-table__element.Pr { grid-area: Pr;}
+.periodic-table__element.Gi { grid-area: Gi;}
+.periodic-table__element.Cl { grid-area: Cl;}
+.periodic-table__element.Fe { grid-area: Fe;}
+.periodic-table__element.Mc { grid-area: Mc;}
+.periodic-table__element.Ni { grid-area: Ni;}
+.periodic-table__element.Am { grid-area: Am;}
+.periodic-table__element.Su { grid-area: Su;}
+.periodic-table__element.Ga { grid-area: Ga;}
+.periodic-table__element.Pe { grid-area: Pe;}
+.periodic-table__element.Ch { grid-area: Ch;}
+.periodic-table__element.Al { grid-area: Al;}
+.periodic-table__element.Cw { grid-area: Cw;}
+.periodic-table__element.Ju { grid-area: Ju;}
+.periodic-table__element.Sl { grid-area: Sl;}
+.periodic-table__element.Ar { grid-area: Ar;}
+.periodic-table__element.Cb { grid-area: Cb;}
+.periodic-table__element.As { grid-area: As;}
+.periodic-table__element.Sa { grid-area: Sa;}
+.periodic-table__element.Po { grid-area: Po;}
+.periodic-table__element.Nu { grid-area: Nu;}
+.periodic-table__element.Di { grid-area: Di;}
+.periodic-table__element.Ro { grid-area: Ro;}
+.periodic-table__element.Bl { grid-area: Bl;}
+.periodic-table__element.Ba { grid-area: Ba;}
+.periodic-table__element.By { grid-area: By;}
+.periodic-table__element.Cy { grid-area: Cy;}
+.periodic-table__element.Fg { grid-area: Fg;}
+.periodic-table__element.Aj { grid-area: Aj;}
+.periodic-table__element.Ma { grid-area: Ma;}
+.periodic-table__element.Ao { grid-area: Ao;}
+.periodic-table__element.Co { grid-area: Co;}
+.periodic-table__element.Cm { grid-area: Cm;}
+.periodic-table__element.Gg { grid-area: Gg;}
+.periodic-table__element.Cc { grid-area: Cc;}
+.periodic-table__element.Mu { grid-area: Mu;}
+.periodic-table__element.Tu { grid-area: Tu;}
+.periodic-table__element.Ce { grid-area: Ce;}
