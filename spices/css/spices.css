@@ -1,6 +1,5 @@
 .periodic-table {
   display: grid;
-  grid-template: repeat(6, auto)/repeat(9, auto);
   grid-gap: 2px;
   grid-auto-rows: 1fr;
   grid-auto-columns: 1fr;
@@ -289,8 +288,6 @@
   display: none !important;
 }
 
-
-/* Full card view */
 .grid-container {
   display: grid;
   grid-gap: 2px;
@@ -324,15 +321,14 @@
                        "Ma Ao Co Cm Gg Cc Mu Tu Ce";
 }
 
-
 .grid_order-compounds {
   display: grid;
-  grid-template-areas: "Ci An Lq Va Li Pa Se Si"
-                       "Ca St Mb Cu Lm Ta Wa Pr Gi"
-                       "Cl Fe Mc Ni Am Su Ga Pe Ch"
-                       "Al Cw Ju Sl Ar Cb As Sa Po"
-                       "Nu Di Ro Bl Ba By Cy Fg Aj"
-                       "Ma Ao Co Cm Gg Cc Mu Tu Ce";
+  grid-template-areas: "Ci An Lq Va" "Li Pa Se Si"
+                       "Ca St Mb Cu" "Lm Ta Wa Pr Gi"
+                       "Cl Fe Mc Ni" "Am Su Ga Pe Ch"
+                       "Al Cw Ju Sl" "Ar Cb As Sa Po"
+                       "Nu Di Ro Bl" "Ba By Cy Fg Aj"
+                       "Ma Ao Co Cm" "Gg Cc Mu Tu Ce";
 }
 
 .periodic-table__element.Ci { grid-area: Ci;}
