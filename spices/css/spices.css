@@ -311,14 +311,45 @@
 
 
 
+
+/*
+Periodic grid template
+*/
 .grid_order-periodic {
   display: grid;
-  grid-template-areas: "Ci An Lq Va Li Le Pa Se Si"
-                       "Ca St Mb Cu Lm Ta Wa Pr Gi"
-                       "Cl Fe Mc Ni Am Su Ga Pe Ch"
-                       "Al Cw Ju Sl Ar Cb As Sa Po"
-                       "Nu Di Ro Bl Ba By Cy Fg Aj"
-                       "Ma Ao Co Cm Gg Cc Mu Tu Ce";
+}
+@media (max-width: 425px) {
+  .grid_order-periodic {
+    grid-template-areas: 
+    "Ci An Lq"
+    "Va Li Le"
+    "Pa Se Si"
+    "Ca St Mb"
+    "Cu Lm Ta"
+    "Wa Pr Gi"
+    "Cl Fe Mc"
+    "Ni Am Su"
+    "Ga Pe Ch"
+    "Al Cw Ju"
+    "Sl Ar Cb"
+    "As Sa Po"
+    "Nu Di Ro"
+    "Bl Ba By"
+    "Cy Fg Aj"
+    "Ma Ao Co"
+    "Cm Gg Cc"
+    "Mu Tu Ce";
+  }
+}
+@media (min-width: 426px) {
+  .grid_order-periodic {
+    grid-template-areas: "Ci An Lq Va Li Le Pa Se Si"
+                         "Ca St Mb Cu Lm Ta Wa Pr Gi"
+                         "Cl Fe Mc Ni Am Su Ga Pe Ch"
+                         "Al Cw Ju Sl Ar Cb As Sa Po"
+                         "Nu Di Ro Bl Ba By Cy Fg Aj"
+                         "Ma Ao Co Cm Gg Cc Mu Tu Ce";
+  }
 }
 
 .grid_order-compounds {
@@ -336,6 +367,7 @@
 .periodic-table__element.Lq { grid-area: Lq;}
 .periodic-table__element.Va { grid-area: Va;}
 .periodic-table__element.Li { grid-area: Li;}
+.periodic-table__element.Le { grid-area: Le;}
 .periodic-table__element.Pa { grid-area: Pa;}
 .periodic-table__element.Se { grid-area: Se;}
 .periodic-table__element.Si { grid-area: Si;}
