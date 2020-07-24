@@ -47,7 +47,10 @@ header, footer {
     margin: 0.2rem
 }
 footer {
-    padding:1.45rem 1.0875rem;
-    position: absolute;
+    position: fixed;
     bottom: 0;
+    width: 100%;    
+    background: var(--backgroundColor);
+    margin: 0px;
+    padding: 0px 5px 2px;
 }

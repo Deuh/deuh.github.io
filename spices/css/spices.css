@@ -315,11 +315,11 @@
 /*
 Periodic grid template
 */
-.grid_order-periodic {
-  display: grid;
-}
 @media (max-width: 425px) {
+  
   .grid_order-periodic {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     grid-template-areas: 
     "Ci An Lq"
     "Va Li Le"
@@ -343,12 +343,15 @@ Periodic grid template
 }
 @media (min-width: 426px) {
   .grid_order-periodic {
-    grid-template-areas: "Ci An Lq Va Li Le Pa Se Si"
-                         "Ca St Mb Cu Lm Ta Wa Pr Gi"
-                         "Cl Fe Mc Ni Am Su Ga Pe Ch"
-                         "Al Cw Ju Sl Ar Cb As Sa Po"
-                         "Nu Di Ro Bl Ba By Cy Fg Aj"
-                         "Ma Ao Co Cm Gg Cc Mu Tu Ce";
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    grid-template-areas:
+    "Ci An Lq Va Li Le Pa Se Si"
+    "Ca St Mb Cu Lm Ta Wa Pr Gi"
+    "Cl Fe Mc Ni Am Su Ga Pe Ch"
+    "Al Cw Ju Sl Ar Cb As Sa Po"
+    "Nu Di Ro Bl Ba By Cy Fg Aj"
+    "Ma Ao Co Cm Gg Cc Mu Tu Ce";
   }
 }
 
