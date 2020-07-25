@@ -316,7 +316,6 @@
 Periodic grid template
 */
 @media (max-width: 425px) {
-  
   .grid_order-periodic {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -343,8 +342,8 @@ Periodic grid template
 }
 @media (min-width: 426px) {
   .grid_order-periodic {
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(12, 1fr);
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(6, 1fr);
     grid-template-areas:
     "Ci An Lq Va Li Le Pa Se Si"
     "Ca St Mb Cu Lm Ta Wa Pr Gi"
