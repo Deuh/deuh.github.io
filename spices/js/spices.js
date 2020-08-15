@@ -1,8 +1,21 @@
 /*
  * Spices Script
  */
+const el_periodicTable = document.getElementById('periodic-table');
+let json_spices;
+let json_compounds;
+
 function main() {
-    getJsonFile('https://deuh.github.io/spices/data/spices.json');
+    var json = getJsonFile('https://deuh.github.io/spices/data/spices.json');
+    // select display mode
+    document.getElementById('display_periodic').onclick = function() {
+        el_periodicTable.classList.add('grid_order-periodic');
+        el_periodicTable.classList.remove('grid_order-compounds');
+    }
+    document.getElementById('display_compound').onclick = function() {
+        el_periodicTable.classList.add('grid_order-compounds');
+        el_periodicTable.classList.remove('grid_order-periodic');
+    }
 }
 
 function getJsonFile(src) {
@@ -15,8 +28,11 @@ function getJsonFile(src) {
                 return response.json();
             })
             .then(json => {
-                console.log('json', json);
+                json_spices = json.spices;
+                json_compounds = json.compounds;
+
                 renderPeriodicTable(json.spices, json.compounds);
+                renderCompoundsTags(json.compounds);
             })
     } else {
         console.log('TODO: XMLHttpRequest');
@@ -37,7 +53,7 @@ function renderPeriodicTable(data, compounds) {
 function generateElement(num, id, name, compound, flavours, grid) {
     var el = document.createElement('div');
     el.setAttribute('class', 'periodic-table__element periodic-table__element--' + compound + ' ' + id);
-    el.setAttribute('style', grid);
+    //el.setAttribute('style', grid);
     el.appendChild(createDiv('name', name));
     el.appendChild(createDiv('compounds-id', compound));
     el.appendChild(createDiv('symbol', id));
@@ -52,4 +68,24 @@ function createDiv(elclass, value) {
     return el;
 }
 
+function generateTag(id, name) {
+    var el = document.createElement('div');
+    el.setAttribute('class', 'compoundTag compoundTag-' + id);
+    el.appendChild(createDiv('id', id));
+    el.appendChild(createDiv('name', name));
+    el.onclick = function() {
+        console.log('click on ' + name);
+        el.classList.toggle('active');
+        el_periodicTable.classList.toggle('active--'+id);
+    } 
+    return el;
+}
+
+function renderCompoundsTags(data){
+    var app = document.querySelector('#periodic-table').parentNode;
+    for (var key in data) {
+        var el = generateTag(data[key].id, data[key].name);
+        app.appendChild(el);
+    }
+}
 main();
