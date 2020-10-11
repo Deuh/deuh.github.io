@@ -14,14 +14,88 @@
     <language>fr-FR</language>
     <itunes:explicit>no</itunes:explicit>
     <item>
-      <author>Enseignements-Jean-Marc Thobois</author>
-      <itunes:author>Enseignements-Jean-Marc Thobois</itunes:author>
+      <author>Enseignements - Jean-Marc Thobois</author>
+      <itunes:author>Enseignements - Jean-Marc Thobois</itunes:author>
       <title>01 - L'inspiration des Ecritures 1</title>
       <pubDate>Unknown</pubDate>
-      <enclosure url="http://www.enseignements-bibliques-jmthobois.com/audio/190-01-L-inspiration-des-Ecritures-1.mp3" type="audio/mpeg" />
+      <enclosure url=\"http://www.enseignements-bibliques-jmthobois.com/audio/190-01-L-inspiration-des-Ecritures-1.mp3\" type=\"audio/mpeg\" />
       <itunes:duration>57:00</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
-      <description>Série 190 - Les Ecritures: 01 - L'inspiration des Ecritures 1</description>
-    </item>
-  </channel>
+      <description>Série 190 : Les Ecritures - <em>
+        <small>par Jean Marc Thobois</small>
+      </em>01 - L'inspiration des Ecritures 1</description>
+  </item>
+  <item>
+    <author>Enseignements - Jean-Marc Thobois</author>
+    <itunes:author>Enseignements - Jean-Marc Thobois</itunes:author>
+    <title>02 - L'inspiration des Ecritures 2</title>
+    <pubDate>Unknown</pubDate>
+    <enclosure url=\"http://www.enseignements-bibliques-jmthobois.com/audio/190-02-L-inspiration-des-Ecritures-2.mp3\" type=\"audio/mpeg\" />
+    <itunes:duration>71:00</itunes:duration>
+    <itunes:explicit>no</itunes:explicit>
+    <description>Série 190 : Les Ecritures - <em>
+      <small>par Jean Marc Thobois</small>
+    </em>02 - L'inspiration des Ecritures 2</description>
+</item>
+<item>
+  <author>Enseignements - Jean-Marc Thobois</author>
+  <itunes:author>Enseignements - Jean-Marc Thobois</itunes:author>
+  <title>03 - L'inspiration des Ecritures 3</title>
+  <pubDate>Unknown</pubDate>
+  <enclosure url=\"http://www.enseignements-bibliques-jmthobois.com/audio/190-03-L-inspiration-des-Ecritures-3.mp3\" type=\"audio/mpeg\" />
+  <itunes:duration>62:00</itunes:duration>
+  <itunes:explicit>no</itunes:explicit>
+  <description>Série 190 : Les Ecritures - <em>
+    <small>par Jean Marc Thobois</small>
+  </em>03 - L'inspiration des Ecritures 3</description>
+</item>
+<item>
+<author>Enseignements - Jean-Marc Thobois</author>
+<itunes:author>Enseignements - Jean-Marc Thobois</itunes:author>
+<title>04 - Les récits historiques</title>
+<pubDate>Unknown</pubDate>
+<enclosure url=\"http://www.enseignements-bibliques-jmthobois.com/audio/190-04-Les-recits-historiques.mp3\" type=\"audio/mpeg\" />
+<itunes:duration>52:00</itunes:duration>
+<itunes:explicit>no</itunes:explicit>
+<description>Série 190 : Les Ecritures - <em>
+  <small>par Jean Marc Thobois</small>
+</em>04 - Les récits historiques</description>
+</item>
+<item>
+<author>Enseignements - Jean-Marc Thobois</author>
+<itunes:author>Enseignements - Jean-Marc Thobois</itunes:author>
+<title>05 - La canonisation</title>
+<pubDate>Unknown</pubDate>
+<enclosure url=\"http://www.enseignements-bibliques-jmthobois.com/audio/190-05-La-canonisation.mp3\" type=\"audio/mpeg\" />
+<itunes:duration>56:00</itunes:duration>
+<itunes:explicit>no</itunes:explicit>
+<description>Série 190 : Les Ecritures - <em>
+<small>par Jean Marc Thobois</small>
+</em>05 - La canonisation</description>
+</item>
+<item>
+<author>Enseignements - Jean-Marc Thobois</author>
+<itunes:author>Enseignements - Jean-Marc Thobois</itunes:author>
+<title>06 - La canonisation (suite)</title>
+<pubDate>Unknown</pubDate>
+<enclosure url=\"http://www.enseignements-bibliques-jmthobois.com/audio/190-06-La-canonisation-suite.mp3\" type=\"audio/mpeg\" />
+<itunes:duration>35:00</itunes:duration>
+<itunes:explicit>no</itunes:explicit>
+<description>Série 190 : Les Ecritures - <em>
+<small>par Jean Marc Thobois</small>
+</em>06 - La canonisation (suite)</description>
+</item>
+<item>
+<author>Enseignements - Jean-Marc Thobois</author>
+<itunes:author>Enseignements - Jean-Marc Thobois</itunes:author>
+<title>07 - Les Apocryphes</title>
+<pubDate>Unknown</pubDate>
+<enclosure url=\"http://www.enseignements-bibliques-jmthobois.com/audio/190-07-Les-Apocryphes.mp3\" type=\"audio/mpeg\" />
+<itunes:duration>61:00</itunes:duration>
+<itunes:explicit>no</itunes:explicit>
+<description>Série 190 : Les Ecritures - <em>
+<small>par Jean Marc Thobois</small>
+</em>07 - Les Apocryphes</description>
+</item>
+</channel>
 </rss>
