@@ -1,0 +1,58 @@
+:root {
+    --navBarColor: #2d2d2d;
+    --backgroundColor: #151515;
+    --navBarLightColor: #595959;
+    --textInButtonPadding: 1.2rem;
+    --textColor: #32c848;
+    --textHoverColor: #fc625c;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 12px
+}
+
+*,
+:after,
+:before {
+    box-sizing: inherit
+}
+
+body {
+    font-family: Roboto Mono, monospace;
+    margin: 0;
+    background-color: var(--backgroundColor);
+    color: #fff;
+    
+}
+
+a {
+    color: var(--textColor);
+    text-decoration: none
+}
+
+a:hover {
+    color: var(--textHoverColor);
+}
+
+header, footer {
+    margin:1rem 0;
+}
+
+.container {
+    margin:0 auto;
+    max-width:960px;
+}
+.content {
+    margin: 0.2rem
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;    
+    background: var(--backgroundColor);
+    margin: 0px;
+    padding: 0px 5px 2px;
+}
+
+
