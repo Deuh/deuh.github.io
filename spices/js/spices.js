@@ -45,7 +45,7 @@ function renderPeriodicTable(data, compounds) {
         var spice = data[key];
         var grid = 'grid-area: ' + spice.col + ' / ' + spice.row + ';';
         grid = '';
-        var el = generateElement(key, spice.id, spice.name, compounds[spice.compound_id].id, spice.flavours, grid);
+        var el = generateElement(key, spice.id, spice.name, spice.compound_id, spice.flavours, grid);
         app.appendChild(el);
     }
 }
