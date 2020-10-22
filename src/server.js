@@ -10,7 +10,7 @@ const url = dev ? '/' : 'deuh.github.io';
 
 polka() // You can also use Express
 	.use(
-		url
+		url,
 		compression({ threshold: 0 }),
 		sirv('static', { dev }),
 		sapper.middleware()
