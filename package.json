@@ -1,6 +1,6 @@
 {
-  "name": "TODO",
-  "description": "TODO",
+  "name": "deuh.github.io",
+  "description": "Deuh's labs",
   "version": "0.0.1",
   "scripts": {
     "dev": "sapper dev",
