@@ -15,7 +15,7 @@
       return json;
     } else {
       console.log(text);
-      throw new Error(text);
+      //throw new Error(text);
     }
   }
 
