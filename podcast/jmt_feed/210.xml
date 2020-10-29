@@ -14,7 +14,7 @@
     <description>Podcast Feed pour ecouter les enseignement de JMT provenent du site: http://www.enseignements-bibliques-jmthobois.com/ </description>
     <language>fr-FR</language>
     <itunes:explicit>no</itunes:explicit>
-<item><itunes:author>Enseignements - Jean-Marc Thobois</itunes:author><title>01- Origine de L'homme - le corps- l'âme et l'esprit</title><pubDate>Unknown</pubDate><enclosure url=\"http://www.enseignements-bibliques-jmthobois.com/audio/210-01-Origine-de-l-homme-le-corps-l-ame-et-l-esprit.mp3\" type=\"audio/mpeg\" /><itunes:duration>56:00</itunes:duration><itunes:subtitle>Série 210 : Anthropologie undefined</itunes:subtitle></item>
-  <item><itunes:author>Enseignements - Jean-Marc Thobois</itunes:author><title>02- L'âme - le corps - le péché</title><pubDate>Unknown</pubDate><enclosure url=\"http://www.enseignements-bibliques-jmthobois.com/audio/210-02-l-ame-le-corps-le-peche.mp3\" type=\"audio/mpeg\" /><itunes:duration>61:00</itunes:duration><itunes:subtitle>Série 210 : Anthropologie undefined</itunes:subtitle></item>
+<item><itunes:author>Enseignements - Jean-Marc Thobois</itunes:author><title>01- Origine de L'homme - le corps- l'âme et l'esprit</title><pubDate>Unknown</pubDate><enclosure url="http://www.enseignements-bibliques-jmthobois.com/audio/210-01-Origine-de-l-homme-le-corps-l-ame-et-l-esprit.mp3" type="audio/mpeg" /><itunes:duration>56:00</itunes:duration><itunes:subtitle>Série 210 : Anthropologie undefined</itunes:subtitle></item>
+  <item><itunes:author>Enseignements - Jean-Marc Thobois</itunes:author><title>02- L'âme - le corps - le péché</title><pubDate>Unknown</pubDate><enclosure url="http://www.enseignements-bibliques-jmthobois.com/audio/210-02-l-ame-le-corps-le-peche.mp3" type="audio/mpeg" /><itunes:duration>61:00</itunes:duration><itunes:subtitle>Série 210 : Anthropologie undefined</itunes:subtitle></item>
 </channel>
 </rss>
