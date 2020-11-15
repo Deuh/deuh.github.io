@@ -12,9 +12,9 @@ onMount(() => {
         - 26/09/1985 She's here
         - 14/11/1987 He's here
         - 12/10/2009 Mars & Venus aligned
-        - 26/09/1985-09/09/2015 France
-        - 09/09/2015-10/2020 Islande
-        - 08/11/2020- United Kingdom
+        - 26/09/1985-09/09/2015 🇫🇷 France
+        - 09/09/2015-10/2020 🇮🇸 Islande
+        - 08/11/2020-  🇬🇧 United Kingdom
             
         `   ;
 (function(){

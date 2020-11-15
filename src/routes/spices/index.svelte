@@ -8,7 +8,7 @@
 
   let data = fetchData();
   async function fetchData() {
-    const res = await fetch(`https://deuh.github.io/data/spices.json`);
+    const res = await fetch(`data/spices.json`);
     const json = await res.json();
     if (res.ok) {
       console.log(json);

@@ -3,7 +3,6 @@
     export let name = 'Name';
     export let compound_id = 'Compound';
     export let flavours = ['one', 'two', 'three'];
-    export let num;
 </script>
 
 <div class="periodic-table__element element--{compound_id} {id}">
