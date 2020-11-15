@@ -3,7 +3,7 @@
 
     let menu = [
         {href:'spices', icon: '🌶️', title: 'Experiment #1: Spices'},
-        {href:'#', icon: '🔒locked', title: 'Experiment #2: Timeline'},
+        {href:'timeline', icon: '🔒locked', title: 'Experiment #2: Timeline'},
         {href:'#', icon: '🔒locked', title: 'Experiment #3: Netskip'},
         /*{href:'about', icon: 'A', title: 'About'},
         {href:'blog', icon: 'B', title: 'Blog'},*/
