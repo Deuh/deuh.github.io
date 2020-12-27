@@ -67,6 +67,11 @@
   display: none;
   order: 4;
 }
+
+
+.grid_order-compounds .periodic-table__element .name {
+  display: none;
+}
 .periodic-table__element:hover .compounds-id {
   display: block;
 }
