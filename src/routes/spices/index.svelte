@@ -2,9 +2,7 @@
   import SpiceCard from "./spice.svelte";
   import CompoundTag from "./compound.svelte";
   import IconGrid from '../../components/icon_gg_grid.svelte';
-  import IconFullwidth from '../../components/icon_gg_fullwidth.svelte';
   import IconGgFullwidth from "../../components/icon_gg_fullwidth.svelte";
-
 
   let data = fetchData();
   async function fetchData() {

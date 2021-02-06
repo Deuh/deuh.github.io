@@ -11,8 +11,8 @@
   <div class="symbol">{id}</div>
   <div class="flavours">
     <ul class="flavour_list">
-    {#each flavours as flavour, i}
-      <li class="fl-item fl-item--{i}">{flavour}</li>
+    {#each flavours as flavour}
+      <li class="fl-item fl-item--{flavour}">{flavour}</li>
     {/each}
   </ul>
   </div>

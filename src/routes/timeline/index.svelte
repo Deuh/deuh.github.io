@@ -7,15 +7,16 @@
 
 onMount(() => {
     let thedata =
-        `Life
+        `Some events
         ===============
         - 26/09/1985 She's here
         - 14/11/1987 He's here
         - 12/10/2009 Mars & Venus aligned
         - 26/09/1985-09/09/2015 🇫🇷 France
         - 09/09/2015-10/2020 🇮🇸 Islande
-        - 08/11/2020-  🇬🇧 United Kingdom
-            
+		- 08/11/2020-  🇬🇧 United Kingdom
+		- 19/12/2020 Pre-Settle C.
+		- 08/01/2021 Pre-Settle A.
         `   ;
 (function(){
 	var life = {

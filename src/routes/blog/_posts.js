@@ -17,6 +17,15 @@ const posts = [
 			</p>
 		`
 	},
+	{
+		title: 'I lived in Iceland for 5 years',
+		slug: 'i-lived-in-iceland-for-5-years',
+		html: `
+			<p>
+				Here my feedback about living in Iceland...
+			</p>
+		`
+	},
 ];
 
 posts.forEach(post => {

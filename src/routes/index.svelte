@@ -30,6 +30,11 @@
           aria-current={segment === 'netskip' ? 'page' : undefined}
           href="/#">[🔒locked] - [ Experiment #3: Netskip ]</a>
       </li>
+      <li>
+        <a
+          aria-current={segment === 'dataMiner' ? 'page' : undefined}
+          href="/dataMiner">[🔒locked] - [ Experiment #4: Page data Miner extension]</a>
+      </li>
     </ul>
 
     <!--
