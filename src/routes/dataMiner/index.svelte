@@ -1,5 +1,4 @@
 <script>
-	import LinkWithIcon from "./linkButton.svelte";
 	import Item from "./item.svelte";
 
 	let rules = [
@@ -12,18 +11,25 @@
             ];
 </script>
 
-<h2>Links buttons</h2>
-<LinkWithIcon name='Chrome Store' url='#' icon=''/>
-<LinkWithIcon name='Electric ?' url="#" icon='plug'/>
-<LinkWithIcon name='Indexed' url="#" icon=''/>
-<LinkWithIcon name='Published' url="#" icon=''/>
+<div class="double-panel">
+	<div class="panel-left">
+		<h2>Input rules</h2>
 
-<br><br>
-<h2>rules showcase</h2>
-{#each rules as rule}
-	<Item {...rule} /><br>
-{/each}
+	</div>
+	<div class="panel-right">
+		<h2>rules showcase</h2>
+		{#each rules as rule}
+			<Item {...rule} /><br>
+		{/each}
+	</div>
+</div>
 
 <style>
-
+	.double-panel {
+	grid-template-areas: 'left left left right';
+    display: grid;
+    margin: 25px;
+	}
+	.panel-left {grid-area: left;}
+	.panel-right {grid-area: right;}
 </style>

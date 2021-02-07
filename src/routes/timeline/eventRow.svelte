@@ -15,7 +15,7 @@
     };
     
 
-    let yearLength = 365;
+    let yearLength = 120;
     let monthLength = yearLength/12;
     let dayLength = monthLength/30;
 

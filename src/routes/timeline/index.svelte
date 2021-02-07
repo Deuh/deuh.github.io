@@ -1,87 +1,52 @@
-<div class="life-container">
-    <div id="title"></div>
-    <div id="life"></div>
-</div>
 <script>
-     import { onMount } from 'svelte';
+	import Year from './year.svelte';
+	import EventRows from './eventRows.svelte';
 
-onMount(() => {
-    let thedata =
-        `Some events
-        ===============
-        - 26/09/1985 She's here
-        - 14/11/1987 He's here
-        - 12/10/2009 Mars & Venus aligned
-        - 26/09/1985-09/09/2015 🇫🇷 France
-        - 09/09/2015-10/2020 🇮🇸 Islande
-		- 08/11/2020-  🇬🇧 United Kingdom
-		- 19/12/2020 Pre-Settle C.
-		- 08/01/2021 Pre-Settle A.
-        `   ;
-(function(){
-	var life = {
-		$title: document.getElementById('title'),
-		$el: document.getElementById('life'),
-		utils: {
-			extend: function(object){
-				var args = Array.prototype.slice.call(arguments, 1);
-				for (var i=0, source; source=args[i]; i++){
-					if (!source) continue;
-					for (var property in source){
-						object[property] = source[property];
-					}
-				}
-				return object;
+	$: textAreaValue = `- 2015 start year
+- 2019 = event that happens in that year
+- 05/2019 = event that happens in that month/year
+- 01/07/2020 = event that happens exactly on that day/month/year
+- 2020-2021, 10/2020-02/03/2021 = event that happens within the two dates
+- ~2021  = event that happens around the time in that year [<== Not working yet]
+- 2021-~ = event that happens from that year and beyond (now). [<== Not working yet]`;
+	
+	$: life = {
+		hashCode: function(str) {
+			var hash = 0, i, chr;
+			for (i = 0; i < str.length; i++) {
+				chr   = str.charCodeAt(i);
+				hash  = ((hash << 5) - hash) + chr;
+				hash |= 0; // Convert to 32bit integer
 			}
+			return hash;
 		},
-		config: {
-			yearLength: 120, // 120px per year
-			hideAge: false, // Hide age from year axis
-			customStylesheetURL: null // Custom stylesheet
-		},
-		start: function(){
-			life.loadConfig(function(config){
-				life.config = life.utils.extend(life.config, config);
-				if (life.config.customStylesheetURL) life.injectStylesheet(life.config.customStylesheetURL);
-
-				var data = life.parse(thedata);
-				var title = life.parseTitle(thedata);
-				life.render(title, data);
-			});
-		},
-		loadConfig: function(fn){
-			fn({
-                "customStylesheetURL": null,
-                "yearLength": 120,
-                "hideAge": false
-            });
-		},
-		injectStylesheet: function(url){
-			var link = document.createElement('link');
-			link.rel = 'stylesheet';
-			link.href = url;
-			document.body.appendChild(link);
-		},
-		fetch: function(fn){
-			var xhr = new XMLHttpRequest();
-			xhr.open('GET', 'life.md', true);
-			xhr.onload = function(){
-				if (xhr.status == 200) fn(xhr.responseText);
-			};
-			xhr.send();
+		idExist(arr, id) {
+			return arr.some(function(el) {
+				return el.id === id;
+			}); 
 		},
 		parse: function(response){
 			var list = response.match(/\-\s+[^\n\r]+/ig);
 			var data = [];
-			list.forEach(function(l){
-				var matches = l.match(/\-\s+([\d\/\-\~]+)\s(.*)/i);
-				var time = matches[1];
-				var text = matches[2];
-				data.push({
-					time: life.parseTime(time),
-					text: text
+			if (list != null && list.length) {
+				list.forEach(function(l){
+					var matches = l.match(/\-\s+([\d\/\-\~]+)\s(.*)/i);
+					if (matches != null && matches.length){
+						var time = matches[1];
+						var text = matches[2];
+						let hashId = life.hashCode(JSON.stringify({time, text}));
+						if (!life.idExist(data, hashId)) {
+							data.push({
+							id: hashId,
+							time: life.parseTime(time),
+							text: text
+						});
+						} else {
+							console.log('❌ Skipped duplicate');
+						}
+					}
 				});
-			});
+			}
 			return data;
 		},
 		parseTitle: function(response){
@@ -121,139 +86,78 @@ onMount(() => {
 			data.title = time;
 			return data;
 		},
-		firstYear: null,
-		renderEvent: function(d){
-			var firstYear = life.firstYear;
-			var yearLength = life.config.yearLength;
-			var monthLength = yearLength/12;
-			var dayLength = monthLength/30;
-
-			var time = d.time;
-			var estimate = time.estimate;
-			var startYear = time.startYear;
-			var startMonth = time.startMonth;
-			var startDate = time.startDate;
-			var endYear = time.endYear;
-			var endMonth = time.endMonth;
-			var endDate = time.endDate;
-			var width = 0;
-
-			// Calculate offset
-			var startTime = new Date(firstYear, 0, 1);
-			var endTime = new Date(startYear, startMonth ? startMonth-1 : 0, startDate || 1);
-			var daysDiff = (endTime - startTime)/(24*60*60*1000);
-			var offset = daysDiff*dayLength;
-
-			// Calculate width
-			if (endYear){
-				var _endMonth = endMonth ? endMonth-1 : 11;
-				var _endDate = endDate || new Date(endYear, _endMonth+1, 0).getDate();
-				startTime = new Date(startYear, startMonth ? startMonth-1 : 0, startDate || 1);
-				endTime = new Date(endYear, _endMonth, _endDate);
-				daysDiff = (endTime - startTime)/(24*60*60*1000);
-				width = daysDiff*dayLength;
-			} else {
-				if (startDate){
-					width = dayLength;
-				} else if (startMonth){
-					width = monthLength;
-				} else {
-					width = yearLength;
-				}
-			}
-
-			// Parse Markdown links in the text
-			// credit: http://stackoverflow.com/a/9268827
-			var link = null;
-			while(link = d.text.match(/\[([^\]]+)\]\(([^)"]+)(?: \"([^\"]+)\")?\)/)) {
-				var link_attr = "";
-				if (link[3] !== undefined) {
-					link_attr = " title='" + link[3] + "'";
-				}
-				d.text = d.text.replace(link[0], "<a href='" + link[2] + "'" + link_attr + ">" + link[1] + "</a>");
-			}
-
-			return '<div class="event" style="margin-left: ' + offset.toFixed(2) + 'px">'
-				+ '<div class="time" style="width: ' + width.toFixed(2) + 'px"></div>'
-				+ '<div class="date">' + d.time.title + ' ' + d.text + '</div> '
-				+ '</div>';
+		getFirstYear: function(events) {
+			return Math.min.apply(Math, events.map(function(o) { return o.time.startYear; }));
 		},
-		renderYears: function(firstYear, lastYear){
-			var dayLength = life.config.yearLength/12/30;
-			var html = '';
-			var days = 0;
-			var hideAge = life.config.hideAge;
+		getLastYear: function(events) {
+			var thisYear = new Date().getFullYear();
+			return Math.max.apply(Math, events.map(function(o) {
+				return o.time.endYear||thisYear;
+			}));
+		},
+		getYearsList(firstYear, lastYear) {
+			let yearLength = 120;
+
+			let dayLength = yearLength/12/30;
+			let yearsData = [];
 			for (var y=firstYear, age = 0; y<=lastYear+1; y++, age++){
 				var days = (y % 4 == 0) ? 366 : 365;
-				html += '<div class="year" style="width: ' + (days*dayLength).toFixed(2) + 'px"><span>'
-					+ y + (hideAge ? '' : (' <i>(' + age + ')</i>'))
-					+ '</span></div>';
+				yearsData.push({
+					id: y,
+					yearWidth: (days*dayLength).toFixed(2),
+					yearText: y,
+					yearAge: age
+				});
 			}
-			return html;
-		},
-		render: function(title, data){
-			document.title = title;
-			life.$title.innerHTML = title;
-
-			// Get the first and last year for the year axis
-			var firstYear = new Date().getFullYear();
-			var lastYear = firstYear;
-			data.forEach(function(d){
-				var time = d.time;
-				var startYear = time.startYear;
-				var endYear = time.endYear;
-				if (startYear && startYear < firstYear) firstYear = startYear;
-				if (endYear && endYear > lastYear) lastYear = endYear;
-			});
-			life.firstYear = firstYear;
-
-			var html = '<div id="life-events">';
-			// 'comment_' class name is to hide it from Safari Reader
-			html += '<div id="life-years" class="comment_">' + life.renderYears(firstYear, lastYear) + '</div>';
-			data.forEach(function(d){
-				html += life.renderEvent(d);
-			});
-			html += '</div>';
-			life.$el.innerHTML = html;
+			console.log(yearsData);
+			return yearsData;
+			
 		}
 	};
+	$: eventsData = life.parse(textAreaValue);
+	$: firstYear = life.getFirstYear(eventsData);
+	$: lastYear = life.getLastYear(eventsData);
+	$: yearsList = life.getYearsList(firstYear, lastYear);
 
-	var slider = {
-		startingMousePostition: {},
-		containerOffset: {},
-		init: function(){
-			window.addEventListener('mousedown', function(event){
-				slider.startingMousePostition = {
-					x: event.clientX,
-					y: event.clientY
-				};
-				slider.containerOffset = {
-					x: life.$el.scrollLeft,
-					y: life.$el.scrollTop
-				};
-				window.addEventListener('mousemove', slider.slide);
-			});
-			window.addEventListener('mouseup', function(event){
-				window.removeEventListener('mousemove', slider.slide);
-			});
-		},
-		slide: function(event){
-			event.preventDefault();
-			var x = slider.containerOffset.x + (slider.startingMousePostition.x - event.clientX);
-			var y = slider.containerOffset.y + (slider.startingMousePostition.y - event.clientY);
-			life.$el.scrollLeft = x;
-			life.$el.scrollTop = y;
-		}
-	};
-
-	life.start();
-	slider.init();
-})();});
+	$:console.log('index', eventsData, firstYear, lastYear);
 </script>
 
+<textarea id="dataSource" bind:value={textAreaValue}></textarea>
+
+<div class="live">
+	<div class="life-container">
+		<div id="life">
+			<div id="life-events">
+				<div id="life-years" class="comment_">
+					{#each yearsList as data (data.id)}
+						<Year {...data} />
+					{/each}
+				</div>
+			<EventRows firstYear={firstYear} eventsData={eventsData}/>
+			</div>
+		</div>
+	</div>
+</div>
 
 <style>
-    :global(h1){
+	
+	
+:root {
+    --navBarColor: #2d2d2d;
+    --backgroundColor: #151515;
+    --navBarLightColor: #595959;
+    --textInButtonPadding: 1.2rem;
+    --textColor: #32c848;
+    --textHoverColor: #fc625c;
+}
+#dataSource {
+		width: 100%;
+		min-height: 120px;
+		resize: vertical;
+		background-color: var(--backgroundColor);
+    	color: var( --textColor);
+}
+	  :global(h1){
         display: inline;
         font-size: 20px;
         line-height: 1em;
@@ -350,5 +254,5 @@ onMount(() => {
     :global(#life .event:hover .date) {
         color: #fff;
     }
-    </style>
-    
+</style>
+
