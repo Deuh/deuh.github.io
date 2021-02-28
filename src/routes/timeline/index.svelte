@@ -96,7 +96,7 @@
 			}));
 		},
 		getYearsList(firstYear, lastYear) {
-			let yearLength = 120;
+			let yearLength = 365;
 
 			let dayLength = yearLength/12/30;
 			let yearsData = [];

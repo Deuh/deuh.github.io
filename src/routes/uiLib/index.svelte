@@ -1,5 +1,5 @@
 <script>
-    import LinkWithIcon from "../uiLib/linkButton.svelte"; 
+    import LinkWithIcon from "../../components/linkButton.svelte"; 
 </script>
 
 <h2>Links button with icon</h2>
