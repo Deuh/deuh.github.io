@@ -18,7 +18,7 @@
       <itunes:author>Enseignements - Jean-Marc Thobois</itunes:author>
       <title>01 - Introduction aux paraboles</title>
       <pubDate>Unknown</pubDate>
-      <enclosure url='https://docs.google.com/uc?id=1-kHTYiRCt8btIqZjVKCzlp9CJ4qhcxvm&export=download' type="audio/mpeg" />
+      <enclosure url='https%3A%2F%2Fdocs.google.com%2Fuc%3Fid%3D1-kHTYiRCt8btIqZjVKCzlp9CJ4qhcxvm%26export%3Ddownload' type="audio/mpeg" />
       <itunes:duration>20:00</itunes:duration>
       <itunes:subtitle>Paraboles</itunes:subtitle>
     </item>
