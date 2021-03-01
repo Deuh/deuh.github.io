@@ -5,20 +5,22 @@
     <author>Enseignements - Jean-Marc Thobois</author>
     <itunes:author>Enseignements - Jean-Marc Thobois</itunes:author>
     <itunes:email>webmaster@enseignements-bibliques-jmthobois.com</itunes:email>
-    <itunes:image href="" />
+    <itunes:image href="https://deuh.github.io/podcast/jmt_feed/podcast_paraboles.png" />
     <itunes:category text="Christianity" />
-    <itunes:owner>
-      <itunes:name>Enseignements - Jean-Marc Thobois</itunes:name>
-      <itunes:email>webmaster@enseignements-bibliques-jmthobois.com</itunes:email>
-    </itunes:owner>
-    <description>Podcast Feed pour ecouter les enseignement de JMT provenent du site: http://www.enseignements-bibliques-jmthobois.com </description>
     <language>fr-FR</language>
     <itunes:explicit>no</itunes:explicit>
     <item>
       <itunes:author>Enseignements - Jean-Marc Thobois</itunes:author>
       <title>01 - Introduction aux paraboles</title>
-      <pubDate>Unknown</pubDate>
       <enclosure url='https://doc-04-8k-docs.googleusercontent.com/docs/securesc/ha0ro937gcuc7l7deffksulhg5h7mbp1/6c3m5q5s6fabs9803rdveufmk9gpufmp/1614621000000/06844253504752435885/*/1-kHTYiRCt8btIqZjVKCzlp9CJ4qhcxvm?e' type="audio/mpeg" />
+      <itunes:duration>33:30</itunes:duration>
+      <itunes:subtitle>Paraboles</itunes:subtitle>
+    </item>
+
+    <item>
+      <itunes:author>Enseignements - Jean-Marc Thobois</itunes:author>
+      <title>02 - Les paraboles du Royaume</title>
+      <enclosure url='https://doc-0s-10-docs.googleusercontent.com/docs/securesc/m263jf3u0ni95ftsu618c8qcqtat1jm8/9l5jomotl9o407k3mmq59371s1v3akca/1614621675000/06844253504752435885/04200483690419294381Z/1cdGB4YXYR0eaUuzxX4KGathknXRV8Q9b?e&nonce=s5p5f0t2oef9e&user=04200483690419294381Z&hash=9nirsv4kdi9a6h21lcbd01o9j9dugpdn' type="audio/mpeg" />
       <itunes:duration>33:30</itunes:duration>
       <itunes:subtitle>Paraboles</itunes:subtitle>
     </item>
