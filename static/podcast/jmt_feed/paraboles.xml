@@ -30,6 +30,57 @@
       <itunes:subtitle>Les Paraboles du Royaume</itunes:subtitle>
       <itunes:author>Enseignements - Jean-Marc Thobois</itunes:author>
     </item>
+
+
+    <item>
+      <title>04 - Parabole de l'homme fort - enseignement </title>
+      <enclosure url='https://archive.org/download/02-les-paraboles-du-royaume-par-jean-marc-thobois-zxhn-7-cigdg/04%20-%20Parabole%20de%20l%27homme%20fort%20-%20enseignement%20de%20Jean-Marc%20Thobois-60wrM9zqeWU.mp3'  type="audio/mpeg" />
+      <itunes:duration>62:35</itunes:duration>
+      <itunes:subtitle>Les Paraboles du Royaume</itunes:subtitle>
+      <itunes:author>Enseignements - Jean-Marc Thobois</itunes:author>
+    </item>
+    <item>
+      <title>05 - Parabole du semeur - Enseignement </title>
+      <enclosure url='https://archive.org/download/02-les-paraboles-du-royaume-par-jean-marc-thobois-zxhn-7-cigdg/05%20-%20Parabole%20du%20semeur%20-%20Enseignement%20de%20Jean-Marc%20Thobois-SLzvXvxu9Kk.mp3'  type="audio/mpeg" />
+      <itunes:duration>71:00</itunes:duration>
+      <itunes:subtitle>Les Paraboles du Royaume</itunes:subtitle>
+      <itunes:author>Enseignements - Jean-Marc Thobois</itunes:author>
+    </item>
+    <item>
+      <title>06 - Parabole de l'ivraie - enseignement </title>
+      <enclosure url='https://archive.org/download/02-les-paraboles-du-royaume-par-jean-marc-thobois-zxhn-7-cigdg/06%20-%20Parabole%20de%20l%27ivraie%20-%20enseignement%20de%20Jean-Marc%20Thobois-UvFxNivtV2w.mp3'  type="audio/mpeg" />
+      <itunes:duration>54:45</itunes:duration>
+      <itunes:subtitle>Les Paraboles du Royaume</itunes:subtitle>
+      <itunes:author>Enseignements - Jean-Marc Thobois</itunes:author>
+    </item>
+    <item>
+      <title>07 - Parabole du filet - enseignement </title>
+      <enclosure url='https://archive.org/download/02-les-paraboles-du-royaume-par-jean-marc-thobois-zxhn-7-cigdg/07%20-%20Parabole%20du%20filet%20-%20enseignement%20de%20Jean-Marc%20THOBOIS-ZiCBWWQpbfA.mp3'  type="audio/mpeg" />
+      <itunes:duration>71:24</itunes:duration>
+      <itunes:subtitle>Les Paraboles du Royaume</itunes:subtitle>
+      <itunes:author>Enseignements - Jean-Marc Thobois</itunes:author>
+    </item>
+    <item>
+      <title>08 - Parabole des mauvais vignerons </title>
+      <enclosure url='https://archive.org/download/02-les-paraboles-du-royaume-par-jean-marc-thobois-zxhn-7-cigdg/08%20-%20Parabole%20des%20mauvais%20vignerons%20-%20Jean-Marc%20Thobois-00lnO2Ws7Ak.mp3'  type="audio/mpeg" />
+      <itunes:duration>59:56</itunes:duration>
+      <itunes:subtitle>Les Paraboles du Royaume</itunes:subtitle>
+      <itunes:author>Enseignements - Jean-Marc Thobois</itunes:author>
+    </item>
+    <item>
+      <title>09 - Parabole des dix vierges </title>
+      <enclosure url='https://archive.org/download/02-les-paraboles-du-royaume-par-jean-marc-thobois-zxhn-7-cigdg/09%20-%20Parabole%20des%20dix%20vierges%20-%20Jean-Marc%20Thobois-Ba_w9qTZ5GE.mp3'  type="audio/mpeg" />
+      <itunes:duration>63:47</itunes:duration>
+      <itunes:subtitle>Les Paraboles du Royaume</itunes:subtitle>
+      <itunes:author>Enseignements - Jean-Marc Thobois</itunes:author>
+    </item>
+    <item>
+      <title>10 - Parabole du figuier </title>
+      <enclosure url='https://archive.org/download/02-les-paraboles-du-royaume-par-jean-marc-thobois-zxhn-7-cigdg/10%20-%20Parabole%20du%20figuier%20-%20Jean-Marc%20Thobois-ZiEDPdnmGXQ.mp3'  type="audio/mpeg" />
+      <itunes:duration>50:12</itunes:duration>
+      <itunes:subtitle>Les Paraboles du Royaume</itunes:subtitle>
+      <itunes:author>Enseignements - Jean-Marc Thobois</itunes:author>
+    </item>
     
   </channel>
 </rss>
