@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deuh.github.io</title>
+    <style>
+        :root {
+            --colorimetrie_id_1: #012b2c;
+            --colorimetrie_id_2: #fbdbc2;
+            --colorimetrie_id_3: #dcb392;
+            --colorimetrie_id_4: #f6eee3;
+            --colorimetrie_id_5s: #fffee4;
+        }
+
+        body {
+            color: var(--colorimetrie_id_2);
+            background-color: var(--colorimetrie_id_1);
+        }
+
+        .middle {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+        .light-mode {
+            color: var(--colorimetrie_id_1);
+            background-color: var(--colorimetrie_id_2);
+        }
+        .light-color {
+            color: var(--colorimetrie_id_4);
+            margin-top: 15px;
+        }
+        .logo {
+           fill: var(--colorimetrie_id_2);
+        }
+
+        .socials a {
+            color: var(--colorimetrie_id_2);
+            display: inline-block;
+            padding: 5px;
+        }
+
+        .socials a:hover {
+            color: var(--colorimetrie_id_4);
+        }
+
+        /* gg css icons */
+        .gg-instagram {
+            box-sizing: border-box;
+            position: relative;
+            display: block;
+            transform: scale(var(--ggs, 1));
+            border: 2px solid transparent;
+            box-shadow: 0 0 0 2px;
+            border-radius: 4px;
+            width: 20px;
+            height: 20px
+        }
+
+        .gg-instagram::after,
+        .gg-instagram::before {
+            content: "";
+            display: block;
+            box-sizing: border-box;
+            position: absolute
+        }
+
+        .gg-instagram::after {
+            border: 2px solid;
+            left: 3px;
+            width: 10px;
+            height: 10px;
+            border-radius: 100%;
+            top: 3px
+        }
+
+        .gg-instagram::before {
+            border-radius: 3px;
+            width: 2px;
+            height: 2px;
+            background: currentColor;
+            right: 1px;
+            top: 1px
+        }
+
+        .gg-facebook {
+            box-sizing: border-box;
+            position: relative;
+            display: block;
+            transform: scale(var(--ggs, 1));
+            width: 20px;
+            height: 20px
+        }
+
+        .gg-facebook::after,
+        .gg-facebook::before {
+            content: "";
+            display: block;
+            position: absolute;
+            box-sizing: border-box
+        }
+
+        .gg-facebook::before {
+            width: 8px;
+            height: 20px;
+            border-left: 4px solid;
+            border-top: 4px solid;
+            border-top-left-radius: 5px;
+            left: 6px
+        }
+
+        .gg-facebook::after {
+            width: 10px;
+            height: 4px;
+            background: currentColor;
+            top: 7px;
+            left: 4px;
+            transform: skew(-5deg)
+        }
+    </style>
+</head>
+
+<body>
+    <div class="middle">
+        <p class="light-color"><i>coming soon...</i></p>
+    </div>
+</body>
+
+</html>

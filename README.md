@@ -1,2 +1,8 @@
 # deuh.github.io
-Deuh's website
+Profile website
+
+## Content
+- [ ] Labs
+- [ ] Blog
+- [ ] Reviews
+- [ ] Links
